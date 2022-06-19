@@ -1,0 +1,44 @@
+﻿<Window x:Class="ShapeNinjaWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Kinect exergame" Height="1080" Width="1920" Background="#FF506BC9" >
+    <!--="None" WindowState="Maximized"-->
+    <Grid>
+        <Label Content="Connection ID:" HorizontalAlignment="Left" Margin="10,24,0,0" VerticalAlignment="Top"/>
+        <Label Content="Status:" HorizontalAlignment="Left" Margin="10,55,0,0" VerticalAlignment="Top" Height="25"/>
+        <Label x:Name="ConnectionID" Content="" HorizontalAlignment="Left" Margin="103,24,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Status" Content="" HorizontalAlignment="Left" Margin="103,55,0,0" VerticalAlignment="Top"/>
+        <Canvas x:Name="ImageCanvas"  Focusable="True" HorizontalAlignment="Left" Height="960" Margin="388,0,0,0" VerticalAlignment="Top" Width="1280" RenderTransformOrigin="0.524,0.568" Background="#FFBDBDBD">
+            <Image Source="/Images/mainBackground.png" Height="961" Width="1280"/>
+            <Image Name="coinName" Height="150" Width="150" Source="/Images/coin.png" Tag="coin" Canvas.Left="39" Canvas.Top="39"/>
+            <!-- <Image x:Name="SpaceShip" Source="/Images/spaceShip.png" Canvas.Left="113" Canvas.Top="437"/> -->
+
+            <!-- character -->
+            <Image Name="spine" Source="/Images/spin.png" Canvas.Left="41" Canvas.Top="418" Width="300" />
+            <Image Name="hipRight" Source="/Images/joint.png" Width="150" Canvas.Left="209" Canvas.Top="634"/>
+            <Image Name="hipLeft" Source="/Images/joint.png" Width="150" Canvas.Left="59" Canvas.Top="634"/>
+            <Image Name="kneeRight" Source="/Images/joint.png" Width="150" Canvas.Left="222" Canvas.Top="745"/>
+            <Image Name="kneeLeft" Source="/Images/joint.png" Width="150" Canvas.Left="59" Canvas.Top="745"/>
+            <Image Name="rightFoot" Source="/Images/rightFoot.png" Width="50" Canvas.Left="291" Canvas.Top="864"/>
+            <Image Name="leftFoot" Source="/Images/LeftFoot.png" Width="50" Canvas.Left="93" Canvas.Top="867"/>
+            <Image Name="rightHand" Source="/Images/rightHand.png" Canvas.Left="346" Canvas.Top="675" Width="50"/>
+            <Image Name="leftHand" Source="/Images/leftHand.png" Canvas.Left="10" Canvas.Top="675" Width="50"/>
+            <Image Name="head" Source="/Images/head.png"  Canvas.Left="129" Canvas.Top="313" Width="120"/>
+            
+
+
+
+            <!-- character -->
+
+            <Image x:Name="star" Source="/Images/star.png" Canvas.Left="379" Canvas.Top="-160" Width="150" Height="150" Tag="star"/>
+            <ListView Name="popUp" Canvas.Left="345" Canvas.Top="274" Height="337" Width="663" Opacity="0">
+                <Label x:Name="popUpText" Content="Level     is starting" Height="328" Width="646" FontSize="60" FontWeight="Bold" Padding="60 120 50 20" RenderTransformOrigin="0.57,0.671"/>
+            </ListView>
+
+        </Canvas>
+        <Label Content="Your Score:" HorizontalAlignment="Left" Margin="1334,24,0,0" VerticalAlignment="Top" Height="76" FontSize="36" Foreground="White" FontWeight="Bold"/>
+        <Label x:Name="scoreCounterIndicator" Content="0" HorizontalAlignment="Left" Margin="1534,5,0,0" VerticalAlignment="Top" Height="101" FontSize="72" FontFamily="Showcard Gothic" Width="126" Foreground="White"/>
+        <Label x:Name="LevelCounter" Content="Level 1" HorizontalAlignment="Left" Margin="415,4,0,0" VerticalAlignment="Top" Height="101" Width="355" FontSize="72" FontWeight="Bold" Background="{x:Null}" Foreground="White" FontFamily="Snap ITC"/>
+        <Button x:Name="StartStopButton" Content="Start" HorizontalAlignment="Center" Margin="989,0,723,10" VerticalAlignment="Bottom" Width="200" Click="StartStopButton_Click" Height="74" FontSize="22" />
+    </Grid>
+</Window>
