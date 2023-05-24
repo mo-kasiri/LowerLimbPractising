@@ -6,3 +6,5 @@ To run the Game, you have to go through simple steps:<br>
   3- Connect your Kinect v1 to your computer<br>
   4- Run the code and you'll be able to play the game<br>
   5- Enjoy!
+  
+  <img height="550" src="./Demo.png" title="App demo" width="1000"/>
