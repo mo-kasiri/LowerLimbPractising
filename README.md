@@ -7,4 +7,4 @@ To run the Game, you have to go through simple steps:<br>
   4- Run the code and you'll be able to play the game<br>
   5- Enjoy!
   
-  <img height="550" src="./Demo.png" title="App demo" width="1000"/>
+  <img height="550" src="./Demo.jpg" title="App demo" width="1000"/>
